@@ -24,9 +24,9 @@ public class SnippetsTool()
     public string SaveSnippet(
         [McpToolTrigger(SaveSnippetToolName, SaveSnippetToolDescription)]
             ToolInvocationContext context,
-        [McpToolProperty(SnippetNamePropertyName, PropertyType, SnippetNamePropertyDescription, Required = true)]
+        [McpToolProperty(SnippetNamePropertyName, PropertyType, true)]
             string name,
-        [McpToolProperty(SnippetPropertyName, PropertyType, SnippetPropertyDescription, Required = true)]
+        [McpToolProperty(SnippetPropertyName, PropertyType, true)]
             string snippet
     )
     {
